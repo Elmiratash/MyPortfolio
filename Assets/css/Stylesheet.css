@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Comforter&family=DM+Serif+Display:ital@1&family=Oswald:wght@300&display=swap');
@@ -16,7 +18,7 @@ html {
 }
 
 body {
-    line-height: 1;
+    line-height: 10px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -46,10 +48,14 @@ h2 {
 }
 
 p {
+    margin-top: -1000px;
+    margin-left: -100px;
+    margin-right: 20px;
     font-family: "serif";
     font-size: 20px;
     font-weight: 300;
-    letter-spacing: -0.5px;
+    letter-spacing: 2px;
+    line-height: 30px;
     text-transform: uppercase;
     text-align-last: left;
     display: block;
@@ -193,38 +199,8 @@ textarea:focus {
 
 /* Image */
 
-.image.main {
-    position: relative;
-    display: block;
-    margin-bottom: 50px;
-    max-width: 100%;
-}
-
-.image.main img {
-    max-width: 100%;
-}
-
-
-/* Arrow */
-
-a.arrow {
-    border-bottom: 0;
-    height: 60px;
-    position: relative;
-    width: 80px;
-}
-
-a.arrow .label {
-    display: none;
-}
-
-a.arrow:before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M442.53,346.28L293.65,495.16c-0.33,0.33-0.7,0.62-1.05,0.94c-9.16,9.77-22.15,15.9-36.6,15.9 c-14.44,0-27.43-6.13-36.59-15.88c-0.35-0.33-0.72-0.62-1.06-0.96L69.47,346.28c-19.62-19.62-19.62-51.44,0-71.05 c19.62-19.62,51.43-19.62,71.06,0l65.23,65.23V50.24C205.76,22.5,228.25,0,256,0s50.24,22.5,50.24,50.24v290.21l65.23-65.23 c19.62-19.62,51.43-19.62,71.05,0C462.15,294.84,462.15,326.66,442.53,346.28z' fill='%23000000' /%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 60px;
+.img {
+    width: 100%;
 }
 
 
@@ -232,8 +208,7 @@ a.arrow:before {
 
 #wrapper {
     position: relative;
-    width: auto;
-    padding-bottom: 70px;
+    padding-bottom: 0;
 }
 
 #wrapper:before {
@@ -243,7 +218,7 @@ a.arrow:before {
     display: block;
     height: 100%;
     position: absolute;
-    width: 500px;
+    width: 550px;
 }
 
 #wrapper section {
@@ -254,26 +229,17 @@ a.arrow:before {
 }
 
 #wrapper section:first-child {
-    margin-top: 0;
+    margin: 20px;
 }
 
-#wrapper section>header {
-    grid-area: header;
-    justify-self: end;
-    text-align: left;
+#wrapper section>b {
+    margin-top: -400px;
 }
 
-#wrapper section>header h2 {
+#wrapper section>h2 {
     margin-left: 320px;
-    margin-bottom: 200px;
-}
-
-#wrapper section>header h1+b {
-    font-family: "serif";
-    font-size: 18px;
-    letter-spacing: -1px;
-    line-height: 2;
-    text-transform: uppercase;
+    margin-bottom: 400px;
+    margin-top: -400px;
 }
 
 #wrapper section>.content p {
@@ -293,16 +259,7 @@ a.arrow:before {
     grid-area: content;
     width: 100%;
     position: relative;
-    margin-top: -250px;
     margin-bottom: -80px;
-}
-
-#wrapper>section>header:before {
-    background: hsl(318, 78%, 75%);
-    content: "";
-    margin-top: -109px;
-    position: absolute;
-    width: 2px;
 }
 
 #wrapper>section>header h1,
@@ -311,35 +268,8 @@ a.arrow:before {
     display: block;
 }
 
-#wrapper>section>header h1:before,
-#wrapper>section>header h2:before {
-    background: hsl(318, 78%, 75%);
-    content: "";
-    display: block;
-    height: 2px;
-    position: absolute;
-    top: 15px;
-}
-
-#wrapper>section>header h1:after,
-#wrapper>section>header h2:after {
-    background: hsl(318, 78%, 75%);
-    border-radius: 0.5rem;
-    content: "";
-    display: flex;
-    height: 0.5rem;
-    position: absolute;
-    top: 12px;
-    width: 0.5rem;
-    right: -23px;
-}
-
-#wrapper>section>header h1 {
-    margin-top: 50px;
-}
-
 #wrapper>section>.content>section:first-child {
-    margin-top: 20px;
+    margin: 0;
 }
 
 #wrapper>section.intro {
@@ -355,16 +285,8 @@ a.arrow:before {
     margin-left: auto;
 }
 
-#wrapper>section.intro>header:before {
-    left: auto;
-}
-
 #wrapper>section.intro>.content {
     height: 100vh;
-}
-
-#wrapper>section:last-of-type>header:before {
-    height: 100%;
 }
 
 #wrapper>section:last-of-type>header:after {
@@ -392,27 +314,12 @@ a.arrow:before {
     padding: 0 5rem;
 }
 
-#wrapper>section>header:before {
-    height: calc(100% + 10rem);
-    left: calc(34.65vw - 5rem);
-}
-
-#wrapper>section>header h1:before,
-#wrapper>section>header h2:before {
-    right: -149px;
-    width: 130px;
-}
-
 #wrapper>section>.content>section {
     left: calc(-30vw - 5rem);
 }
 
 #wrapper>section.intro>header>* {
     width: 26rem;
-}
-
-#wrapper>section.intro>header:before {
-    margin-left: calc(30.2vw - 10rem);
 }
 
 #wrapper>section:last-of-type>header:after {
