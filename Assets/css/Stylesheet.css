@@ -253,15 +253,15 @@ span.img {
 }
 
 #wrapper section>h2 {
-    margin-left: 330px;
+    margin-left: 225px;
     margin-bottom: 400px;
     margin-top: -80px;
 }
 
 #wrapper section>h3 {
-    margin-left: 330px;
+    margin-left: 215px;
     margin-bottom: 600px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #wrapper section>.content p {
@@ -309,13 +309,13 @@ span.img {
 }
 
 #wrapper section>.content {
-    padding: 0 5rem;
+    padding: 0 10rem;
 }
 
 
 /* ICON */
 
-#ion-icon {
-    font-size: 80px;
+.ion-icon {
+    font-size: 64px;
     color: black;
 }
