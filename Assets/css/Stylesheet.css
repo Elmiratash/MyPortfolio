@@ -42,19 +42,30 @@ h2 {
     font-family: "serif";
     font-size: 25px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 1;
     text-transform: uppercase;
-    word-spacing: -8px;
+    word-spacing: 2px;
+}
+
+h3 {
+    font-family: "serif";
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
+    word-spacing: 2px;
 }
 
 p {
     margin-top: -1000px;
-    margin-left: -100px;
-    margin-right: 20px;
+    margin-right: 50px;
     font-family: "serif";
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 2px;
+    line-height: 1;
     line-height: 30px;
     text-transform: uppercase;
     text-align-last: left;
@@ -73,6 +84,8 @@ b {
 }
 
 strong {
+    margin-top: -1000px;
+    margin-right: 50px;
     font-family: "serif";
     font-size: 20px;
     font-weight: 700;
@@ -150,8 +163,8 @@ form {
 form>.fields {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% + 2rem);
-    margin: 10px;
+    width: calc(100% + -7rem);
+    margin: 107px;
 }
 
 form>.fields>.field {
@@ -199,8 +212,11 @@ textarea:focus {
 
 /* Image */
 
-.img {
+span.img {
     width: 100%;
+    justify-content: left;
+    margin-right: -20px;
+    margin-bottom: -200px;
 }
 
 
@@ -208,7 +224,7 @@ textarea:focus {
 
 #wrapper {
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 80px;
 }
 
 #wrapper:before {
@@ -229,37 +245,44 @@ textarea:focus {
 }
 
 #wrapper section:first-child {
-    margin: 20px;
+    margin: 0px;
 }
 
 #wrapper section>b {
-    margin-top: -400px;
+    margin-top: -300px;
 }
 
 #wrapper section>h2 {
-    margin-left: 320px;
+    margin-left: 330px;
     margin-bottom: 400px;
-    margin-top: -400px;
+    margin-top: -80px;
+}
+
+#wrapper section>h3 {
+    margin-left: 330px;
+    margin-bottom: 600px;
+    margin-top: 50px;
 }
 
 #wrapper section>.content p {
     position: relative;
     text-align: justify;
-    margin: 50px;
+    margin: 100px;
 }
 
 #wrapper section>.content {
     grid-area: content;
     width: 100%;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 #wrapper section>.photosamples {
+    margin-top: -20px;
     grid-area: content;
     width: 100%;
     position: relative;
-    margin-bottom: -80px;
+    margin-bottom: 50px;
 }
 
 #wrapper>section>header h1,
@@ -277,53 +300,16 @@ textarea:focus {
 }
 
 #wrapper>section.intro>header {
-    padding-top: 60px;
+    padding-top: 70px;
     width: 100%;
 }
 
-#wrapper>section.intro>header>* {
-    margin-left: auto;
-}
-
-#wrapper>section.intro>.content {
-    height: 100vh;
-}
-
-#wrapper>section:last-of-type>header:after {
-    background: hsl(318, 78%, 75%);
-    border-radius: 0.5rem;
-    bottom: 6.5rem;
-    content: "";
-    display: block;
-    height: 0.5rem;
-    position: absolute;
-    width: 0.5rem;
-    z-index: 1;
-}
-
 #wrapper section {
-    margin: 90px 0 0 0;
-}
-
-#wrapper section>header {
-    padding: 0 10rem 0 9rem;
-    width: 49rem;
+    margin: 100px 0 0 0;
 }
 
 #wrapper section>.content {
     padding: 0 5rem;
-}
-
-#wrapper>section>.content>section {
-    left: calc(-30vw - 5rem);
-}
-
-#wrapper>section.intro>header>* {
-    width: 26rem;
-}
-
-#wrapper>section:last-of-type>header:after {
-    left: calc(34.65vw - 5rem - 0.25rem + 1px);
 }
 
 
