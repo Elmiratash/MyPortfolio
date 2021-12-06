@@ -5,20 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1=0">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comforter&family=DM+Serif+Display:ital@1&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="Stylesheet" href="./Assets/css/Stylesheet.css">
 </head>
 
+
 <body>
+    <nav class="navbar">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#intro">About Me</a></li>
+                <li><a href="#work">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <div id="wrapper">
 
         <section class="intro">
             <header>
-                <h1>Elmira Tashvighi</h1>
-                <b>interior designer & photographer</b>
-                <ul class="actions">
-                    <a href="#first" class="arrow scrolly"><span class="label">Next</span></a>
-                </ul>
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                    </div>
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                            <h5 class="text-white h4">Collapsed content</h5>
+                            <span class="text-muted">Toggleable via the navbar brand.</span>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        </div>
+                    </nav>
+                </nav>
+            </header>
+            <h1>Elmira Tashvighi</h1>
+            <b>interior designer & photographer</b>
+            <ul class="actions">
+                <a href="#first" class="arrow scrolly"><span class="label">Next</span></a>
+            </ul>
             </header>
             <div class="content">
                 <span class="image main"><img src="./Assets/Image/EliTa2.JPG" alt="image of Elmira with background of city of"/></span>
@@ -72,17 +112,19 @@
                 </form>
             </div>
         </section>
-        </main>
         <footer>
             <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-linkedin-in"></i></li>
-                <li><i class="fab fa-youtube"></i></li>
+                <ion-icon name="logo-google"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon href="https://www.linkedin.com/in/elmira-tashvighi-b34587b9/" name="logo-linkedin"></ion-icon>
+                <ion-icon href="https://github.com/Elmiratash" name="logo-github"></ion-icon>
             </ul>
         </footer>
-    </div>
+        <script src="./Assets/JS/Script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
