@@ -287,11 +287,11 @@ span.img {
 
 #wrapper section>.photosamples {
     grid-area: content;
+    margin-bottom: -50px;
 }
 
 #wrapper>section>header h1,
-#wrapper>section>header h2,
-#wrapper>section>header h5 {
+#wrapper>section>header h2 {
     position: relative;
     display: block;
 }
@@ -315,6 +315,11 @@ span.img {
 
 #wrapper section>.content {
     padding: 0 10rem;
+}
+
+#wrapper section>h4 {
+    top: auto;
+    position: inherit;
 }
 
 
