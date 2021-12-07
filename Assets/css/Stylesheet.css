@@ -58,6 +58,15 @@ h3 {
     word-spacing: 2px;
 }
 
+h5 {
+    font-family: "serif";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
 p {
     margin-top: -1000px;
     margin-right: 50px;
@@ -281,7 +290,8 @@ span.img {
 }
 
 #wrapper>section>header h1,
-#wrapper>section>header h2 {
+#wrapper>section>header h2,
+#wrapper>section>header h5 {
     position: relative;
     display: block;
 }
