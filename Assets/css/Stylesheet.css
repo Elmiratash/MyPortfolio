@@ -121,7 +121,7 @@ button,
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
-    margin-left: 30px;
+    margin-left: 500px;
 }
 
 input[type="submit"].primary,
@@ -154,7 +154,6 @@ button.primary:active,
 /* Form */
 
 form {
-    margin: 20px 50px 0 0;
     font-family: "serif";
     font-size: 12px;
     letter-spacing: 10px;
@@ -163,8 +162,8 @@ form {
 form>.fields {
     display: flex;
     flex-wrap: wrap;
-    width: calc(80% + -7rem);
-    margin: 107px;
+    width: calc(100% + -7rem);
+    margin: 70px;
 }
 
 form>.fields>.field {
@@ -197,16 +196,6 @@ textarea {
     outline: 0;
     text-decoration: none;
     width: 100%;
-}
-
-input[type="text"]:hover,
-input[type="email"]:hover,
-input[type="tel"]:hover,
-input[type="search"]:hover,
-input[type="url"]:hover,
-select:hover,
-textarea:hover {
-    border: solid 2px hsla(318, 78%, 75%, 0.63);
 }
 
 input[type="text"]:focus,
@@ -289,12 +278,6 @@ span.img {
 
 #wrapper section>.photosamples {
     grid-area: content;
-    width: 90%;
-    position: relative;
-    margin-bottom: 30px;
-    border-radius: 50%;
-    border: 1px solid hsl(318, 78%, 75%);
-    box-shadow: 8px 8px 12px -2px rgb(187, 192, 196), -5px -5px 9px -2px rgb(173, 177, 177);
 }
 
 #wrapper>section>header h1,
@@ -328,9 +311,7 @@ span.img {
 /* ICON */
 
 .social-links {
-    margin-top: 10px;
-    margin-bottom: 80px;
-    margin-left: 50px;
+    margin-left: 170px;
     display: flex;
     justify-content: center;
 }
