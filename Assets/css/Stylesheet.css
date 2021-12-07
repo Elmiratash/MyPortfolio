@@ -316,9 +316,8 @@ span.img {
     justify-content: center;
 }
 
-a {
-    height: 40px;
-    width: 40px;
+.social-links a {
+    width: 100px;
     margin: 0 15px;
     display: flex;
     align-items: center;
@@ -326,13 +325,13 @@ a {
     text-decoration: none;
     background-color: hsl(319, 70%, 80%);
     border-radius: 50%;
-    border: 1px solid hsl(318, 78%, 75%);
+    border: 2px solid hsl(318, 78%, 75%);
     box-shadow: 8px 8px 12px -2px rgb(187, 192, 196), -5px -5px 9px -2px rgb(173, 177, 177);
     transition: transform 1s;
 }
 
 a i {
-    font-size: 33px;
+    font-size: 30px;
     color: rgb(77, 113, 119);
     transition: transform 1s;
 }
