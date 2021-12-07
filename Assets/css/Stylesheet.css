@@ -163,7 +163,7 @@ form {
 form>.fields {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% + -7rem);
+    width: calc(80% + -7rem);
     margin: 107px;
 }
 
@@ -197,6 +197,16 @@ textarea {
     outline: 0;
     text-decoration: none;
     width: 100%;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="search"]:hover,
+input[type="url"]:hover,
+select:hover,
+textarea:hover {
+    border: solid 2px hsla(318, 78%, 75%, 0.63);
 }
 
 input[type="text"]:focus,
@@ -254,8 +264,8 @@ span.img {
 
 #wrapper section>h2 {
     margin-left: 225px;
-    margin-bottom: 400px;
-    margin-top: -80px;
+    margin-bottom: 300px;
+    margin-top: -70px;
 }
 
 #wrapper section>h3 {
@@ -278,11 +288,13 @@ span.img {
 }
 
 #wrapper section>.photosamples {
-    margin-top: -20px;
     grid-area: content;
-    width: 100%;
+    width: 90%;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 1px solid hsl(318, 78%, 75%);
+    box-shadow: 8px 8px 12px -2px rgb(187, 192, 196), -5px -5px 9px -2px rgb(173, 177, 177);
 }
 
 #wrapper>section>header h1,
@@ -315,7 +327,61 @@ span.img {
 
 /* ICON */
 
-.ion-icon {
-    font-size: 64px;
-    color: black;
+.social-links {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: hsl(319, 70%, 80%);
+    border-radius: 50%;
+    border: 1px solid hsl(318, 78%, 75%);
+    box-shadow: 8px 8px 12px -2px rgb(187, 192, 196), -5px -5px 9px -2px rgb(173, 177, 177);
+    transition: transform 1s;
+}
+
+a i {
+    font-size: 33px;
+    color: rgb(77, 113, 119);
+    transition: transform 1s;
+}
+
+a:hover {
+    box-shadow: inset 6px 6px 8px -2px rgb(168, 170, 172), inset -6px -6px 8px -2px rgb(193, 211, 214), 0px 12px 10px -10px rgb(124, 146, 143);
+    border: 2px solid rgba(194, 171, 194, 0.3);
+    transform: translateY(3px);
+}
+
+a:hover i {
+    transform: scale(0.85);
+}
+
+a:hover .fa-instagram {
+    color: #e4405f;
+}
+
+a:hover .fa-google {
+    color: #cd201f;
+}
+
+a:hover .fa-facebook {
+    color: #21759b;
+}
+
+a:hover .fa-linkedin {
+    color: #0077b5;
+}
+
+a:hover .fa-github {
+    color: #333333;
 }
