@@ -130,7 +130,7 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-    background-color: hsl(318, 78%, 75%);
+    background-color: #73736f;
     box-shadow: none;
     color: #000000 !important;
 }
@@ -140,7 +140,7 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-    background-color: rgba(241, 142, 211, 0.438);
+    background-color: #73736f5d;
 }
 
 input[type="submit"].primary:active,
@@ -148,7 +148,7 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-    background-color: hsl(318, 78%, 75%);
+    background-color: #73736f;
 }
 
 
@@ -206,7 +206,7 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-    border-color: hsl(318, 78%, 75%);
+    border-color: #73736f;
 }
 
 
@@ -235,10 +235,10 @@ span.img {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-color: hsl(319, 70%, 80%);
+    background-color: hsl(300, 20%, 90%);
     border-radius: 45%;
-    border: 5px solid hsl(318, 78%, 75%);
-    box-shadow: 8px 8px 12px -2px rgb(187, 192, 196), -5px -5px 9px -2px rgb(173, 177, 177);
+    border: 5px solid hsl(300, 20%, 90%);
+    box-shadow: 8px 8px 12px -2px rgb(110, 112, 114), -5px -5px 9px -2px rgb(173, 177, 177);
     transition: transform 1s;
 }
 
@@ -250,7 +250,7 @@ a i {
 }
 
 a:hover {
-    box-shadow: inset 6px 6px 8px -2px rgb(168, 170, 172), inset -6px -6px 8px -2px rgb(193, 211, 214), 0px 12px 10px -10px rgb(124, 146, 143);
+    box-shadow: inset 6px 6px 8px -2px white, inset -6px -6px 8px -2px rgb(193, 211, 214), 0px 12px 10px -10px rgb(124, 146, 143);
     border: 2px solid rgba(194, 171, 194, 0.3);
     transform: translateY(3px);
 }
@@ -267,11 +267,11 @@ a:hover .fa-google {
     color: #cd201f;
 }
 
-a:hover .fa-facebook {
+a:hover .fa-facebook-f {
     color: #21759b;
 }
 
-a:hover .fa-linkedin {
+a:hover .fa-linkedin-in {
     color: #0077b5;
 }
 
@@ -282,9 +282,8 @@ a:hover .fa-github {
 
 /* NAVBAR */
 
-.nav {
+.nav-primary {
     width: 100%;
-    height: 50px;
     text-align: center;
     left: 0;
 }
@@ -299,10 +298,17 @@ a:hover .fa-github {
     bottom: 0;
 }
 
+genesis-nav-menu a {
+    border: none;
+    color: rgb(115, 115, 111);
+    display: block;
+    padding: 13.5px 17.5px;
+}
+
 .nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 20px;
+    padding: 30px;
 }
 
 .nav ul li .nav-link {
@@ -312,7 +318,7 @@ a:hover .fa-github {
 }
 
 .nav ul li .nav-link:hover {
-    background: #333;
+    background: rgba(51, 51, 51, 0.418);
     color: #efefef
 }
 
