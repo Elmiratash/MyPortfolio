@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #ebebe0;
+    background-color: #FAF9F6;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Comforter&family=DM+Serif+Display:ital@1&family=Oswald:wght@300&display=swap');
@@ -66,34 +66,20 @@ h6 {
     font-weight: 300;
     text-align: center;
     letter-spacing: 2px;
-    line-height: 1;
     line-height: 30px;
     text-transform: uppercase;
     display: block;
+    margin-bottom: 30px;
 }
 
-b {
-    font-family: "serif";
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    line-height: 2;
-    text-transform: uppercase;
-    text-align-last: right;
-    margin-left: -75px;
-}
-
-strong {
-    margin-top: -1000px;
-    margin-right: 50px;
-    font-family: "serif";
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    text-align-last: left;
+p {
+    font-family: serif;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    display: block;
 }
 
 
@@ -235,7 +221,7 @@ span.img {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background-color: hsl(300, 20%, 90%);
+    background-color: #f7f5f1;
     border-radius: 45%;
     border: 5px solid hsl(300, 20%, 90%);
     box-shadow: 8px 8px 12px -2px rgb(110, 112, 114), -5px -5px 9px -2px rgb(173, 177, 177);
@@ -276,11 +262,19 @@ a:hover .fa-linkedin-in {
 }
 
 a:hover .fa-github {
-    color: #333333;
+    color: #8c1392;
 }
 
 
 /* NAVBAR */
+
+.nav {
+    width: 100%;
+    text-align: center;
+    background: #f5ece2;
+    left: 0;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .2);
+}
 
 .nav-primary {
     width: 100%;
